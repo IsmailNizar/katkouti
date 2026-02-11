@@ -46,8 +46,7 @@ function showMessage() {
 }
 const noBtn = document.getElementById("noBtn");
 
-noBtn.addEventListener("mouseover", moveNoButton);
-noBtn.addEventListener("touchstart", moveNoButton);
+
 
 function moveNoButton() {
     const container = document.querySelector(".question");
@@ -61,6 +60,8 @@ function moveNoButton() {
     noBtn.style.left = randomX + "px";
     noBtn.style.top = randomY + "px";
 }
+noBtn.addEventListener("mouseover", moveNoButton);
+noBtn.addEventListener("touchstart", moveNoButton);
 function showResponse(answer) {
     const responseDiv = document.querySelector('.response');
     const noBtn = document.querySelector('.question button:last-of-type');
